@@ -1,0 +1,88 @@
+<body>
+    <div class="container">
+        <h1>
+            Putting 2 divs side by side
+        </h1>
+
+        Example 1: putting 2 divs side by side where divs are of equal proportion <br/><br/>
+
+        <div class="row">
+            <div class="flex-1 section s1">
+                row 1 left section <br/>
+                flex: 1
+            </div>
+
+            <div class="flex-1 section s2">
+                row 1 right section <br/>
+                flex: 1
+            </div>
+        </div>
+
+        <br/><br/><br/><br/>
+
+        Example 2: putting 2 dics side by side where the left div width takes 75% of the row width <br/><br/>
+
+        <div class="row">
+            <div class="flex-3 section s1">
+                row 2 left section. <br/>
+                flex: 3 <br/>
+                This will take 75% of the width as 3/(3+1) is 75%
+            </div>
+
+            <div class="flex-1 section s2">
+                row 2 right section <br/>
+                flex: 1 <br/>
+                This will take 25% of the width as 1(3+1) is 25%
+            </div>
+        </div>
+
+        <br/><br/><br/><br/>
+
+        Example 3: putting 2 dics side by side where the left div width takes 13/19 of the row width <br/><br/>
+
+        <div class="row">
+            <div class="flex-13 section s1">
+                row 3 left section. <br/>
+                flex: 13 <br/>
+                This will take 68.4% of the width - 13/(13+6) is 68.4%
+            </div>
+
+            <div class="flex-6 section s2">
+                row 3 right section <br/>
+                flex: 6 <br/>
+                This will take 31.6% of the width - 6/(13+6) is 31.6%
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<style>
+
+.container {
+    margin: 5% 15% 5% 15%;
+    
+}
+
+body {
+    font-family: 'Courier New', monospace;
+}
+
+.row {
+    display: flex;
+}
+
+.flex-1 {flex: 1}
+.flex-3 {flex: 3}
+.flex-13 {flex: 13}
+.flex-6 {flex: 6}
+
+.section {
+    height: 10vh;
+    padding: 2%;
+}
+
+.s1 {background-color: lightblue}
+.s2 {background-color:lightcoral}
+
+</style>
